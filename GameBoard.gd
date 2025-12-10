@@ -21,6 +21,7 @@ func _createGameboard(length: int, height: int) -> void:
 			var tile = Tile.instantiate()
 			tileRow.append(tile)
 		gameboard.append(tileRow)
+	
 
 func _displayGameboard() -> void:
 	var tile_size = 32 # tiles are 32x32
@@ -38,3 +39,8 @@ func _displayGameboard() -> void:
 			var tile = gameboard[row][col]
 			tile.position = Vector2(col * tile_size, row * tile_size)
 			add_child(tile)
+		
+
+	
+	
+	
