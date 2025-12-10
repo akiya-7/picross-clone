@@ -14,6 +14,7 @@ func _process(delta: float) -> void:
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event.is_action_pressed(&"click") and InputEventMouseButton:
+	 	#Checks which button we are pressing so we know which one is being marked
 		if event.button_index == MOUSE_BUTTON_RIGHT:
 			isCrossed = true;
 		_button_click();
